@@ -60,7 +60,7 @@ pipeline {
                     |  responsible_user = "${responsible_user}"
                     |  Jira_ticket_Number = "${Jira_ticket_Number}"
                     |}
-EOF
+                  EOF
 
                   echo " ### output tfvars ####"
                   cat terraform.tfvars
@@ -99,7 +99,6 @@ EOF
             }
         }
 
-
         stage('TerraPlanning') {
             when {
                  anyOf {
@@ -131,8 +130,6 @@ EOF
             }
         }
 
-
-
         stage("ValidateBeforeDeploy") {
             when {
                  allOf {
@@ -144,8 +141,6 @@ EOF
                 input 'Are you sure you want to Deploy/Apply? Review the output of the previous step (plan) before proceeding!'
             }
         }
-
-
 
         stage('TerraApplying') {
             when {
@@ -239,5 +234,6 @@ EOF
                   '''
             }
         }
+        
     }
 }
