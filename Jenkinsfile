@@ -60,7 +60,7 @@ pipeline {
                     |  responsible_user = "${responsible_user}"
                     |  Jira_ticket_Number = "${Jira_ticket_Number}"
                     |}
-                  EOF
+EOF
 
                   echo " ### output tfvars ####"
                   cat terraform.tfvars
@@ -234,6 +234,6 @@ pipeline {
                   '''
             }
         }
-        
+
     }
 }
