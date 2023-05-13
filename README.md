@@ -56,11 +56,19 @@ sudo apt install docker-ce -y
 sudo systemctl status docker
 
 ```
+
+## Login to jenkins
+http://<public-ip>:8080
+- install plugins
+  * Docker
+  * AWS 
+  * Github
+
+## Trouble shooting steps
 Note: If you see below error
 ```
 ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/_ping": dial unix /var/run/docker.sock: connect: permission denied
 ```
-
 Please execute below steps on ubuntu instance
 
 ```
@@ -69,3 +77,5 @@ sudo chmod 777 /var/run/docker.sock
 ls -al /var/run/docker.sock 
 
 ``
+
+- If plugins is not recognizing. Please restart the jenkins
