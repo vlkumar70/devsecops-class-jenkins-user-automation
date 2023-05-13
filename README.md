@@ -3,7 +3,7 @@
 ## Pre requisites
 - you need keypair, security group
 - security group should have 22, 8080 ports open
-- Pleae use t2.small do not use t2.micro or t2.nano
+- Please use t2.small do not use t2.micro or t2.nano
 - Spin up Ubuntu 22.04 (t2.small) instance in public subnet
 - Make sure you login to the instance
 
