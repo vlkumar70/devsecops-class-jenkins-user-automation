@@ -8,7 +8,7 @@ pipeline {
 	}
 
     environment {
-        AWS = credentials("partha-dev")
+        AWS = credentials("development")
 	}
 
     parameters {
