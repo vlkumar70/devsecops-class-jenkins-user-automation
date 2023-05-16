@@ -1,4 +1,4 @@
-bucket         = "tek-terraform-state"
+bucket         = "tek-terraform-stat"
 key            = "devops-training/ec2.tfstate"
 region         = "us-east-1"
 encrypt        = true
